@@ -1,0 +1,9 @@
+@(form: Form[UserData])(implicit messages: play.api.i18n.Messages)
+
+@main("XUser") {
+  @helper.form(routes.Application.userPost){
+    @helper.inputText(form("name"))
+    @helper.inputText(form("age"))
+    <button type="submit">Zapisz</button>
+  }
+}

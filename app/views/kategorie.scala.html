@@ -1,0 +1,16 @@
+@(kategorie: List[Kategoria])
+
+@main("Kategorie") {
+  <table class="table table-striped">
+      <thead>
+          <tr><th>Nazwa</th></tr>
+      </thead>
+      <tbody>
+        @kategorie.map{kategoria =>
+                <tr>
+                    <td>@kategoria.name</td>
+                </tr>
+        }
+      </tbody>
+  </table>
+}

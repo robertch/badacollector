@@ -1,0 +1,14 @@
+
+
+GET     /                                     controllers.Application.index
+GET     /kategorie                            controllers.Application.listKategorie
+GET     /towary                               controllers.Application.listT(p:Int ?= 0, s:Int ?= 2, f ?= "")
+GET     /zamowienia                           controllers.Application.listZ(p:Int ?= 0, s:Int ?= 2, f ?= "")
+#GET     /uzytkownicy                          controllers.Application.listU(p:Int ?= 0, s:Int ?= 2, f ?= "")
+
+GET     /assets/*file                         controllers.Assets.at(path="/public", file)
+
+#GET     /newuser                              controllers.Application.newUser
+
+GET     /xuser                                controllers.Application.x_user
+POST    /userPost                             controllers.Application.userPost
